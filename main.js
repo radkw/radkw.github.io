@@ -1,21 +1,29 @@
-var marcrophage = document.getElementById("macrophage");
-var virus = document.getElementById("virus");
-function up(){
-    if (macrophage.classList != "animate") {
-    macrophage.classList.add("animate");
-    }
-    setTimeout(function(){
-        macrophage.classList.remove("animate");
-    },500);
+var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 3000;	// Time Between Switch
+	 
+// Image List
+images[0] = "dismaland.jpeg";
+images[1] = "banksy hotel.jpg";
+images[2] = "traf square.jpg";
+images[3] = "lab.jpg";
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
 }
 
-var checkDead = setInterval(function(){
-    var macrophageTop = 
-    parseInt(window.getComputedStyle(macrophage).getPropertyValue("top"));
-    var blockleft = parseInt(window.getComputedStyle(virus).getPropertyValue("left"));
-    if(blockleft<20 && blockleft>0 && characterTop>=130){
-        virus.style.animation = "none";
-        virus.style.display = "none";
-        alert("You got infected")
-    }
-},10);
+// Run function when page loads
+window.onload=changeImg;
