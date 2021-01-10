@@ -210,7 +210,7 @@ footer{
 	display:flex;
 	justify-content:space-around;
 }
-@media only screen and (max-width: 992px) {
+/*@media only screen and (max-width: 992px) {
 	.grid-col-2{
 		grid-template-columns:1fr;
 	}
@@ -284,10 +284,10 @@ footer{
 		margin-left:10px;
 	}
 }
-
+*/
 
 #slide-img {
     width: 100%;
-    object-fit: cover;
-    height: 50vh;
+
+    height: 70vh;
 }
