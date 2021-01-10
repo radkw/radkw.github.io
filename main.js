@@ -3,7 +3,7 @@ var images = [];	// Images Array
 var time = 3000;	// Time Between Switch
 	 
 // Image List
-images[0] = "dismaland.jpeg";
+images[0] = "dismaland.jpg";
 images[1] = "banksy hotel.jpg";
 images[2] = "traf square.jpg";
 images[3] = "lab.jpg";
