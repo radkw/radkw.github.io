@@ -39,3 +39,35 @@ function displayNav(obj){
 		obj.id = 'on'
 	}
 }
+
+
+
+function openCity(evt, cityName) {
+  var i, content, links;
+  content = document.getElementsByClassName("content");
+  for (i = 0; i < content.length; i++) {
+    content[i].style.display = "none";
+  }
+  links = document.getElementsByClassName("links");
+  for (i = 0; i < links.length; i++) {
+    links[i].className = links[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+
+
+function blackTheme(){
+	var color = "#000000";
+	document.getElementById('body').style.background = color;
+	document.getElementById('body').style.color = "#FFFFFF";
+} 
+
+function whiteTheme(){
+	var color = "#FFFFFF";
+	document.getElementById('body').style.background = color;
+	document.getElementById('body').style.color = "#000000";
+} 
