@@ -81,7 +81,7 @@ body{
 	width:100%;
 	display:flex;
 	justify-content:space-around;
-	background-color: dodgerblue;
+	background-color: black;
 }
 .navbar .nav-left .logo-div h3{
 	color:yellow;
@@ -142,7 +142,7 @@ body{
 
 
 
-/*tab css here*/
+
 .about-me{
 	font-size:30px;
 	text-align:center;
@@ -182,7 +182,7 @@ body{
 	margin-top:100px;
 }
 
-/*grid css here*/
+
 .grid-col-2{
 	display:grid;
 	grid-template-columns: 1fr 1fr;
@@ -208,81 +208,7 @@ footer{
 	display:flex;
 	justify-content:space-around;
 }
-/*@media only screen and (max-width: 992px) {
-	.grid-col-2{
-		grid-template-columns:1fr;
-	}
-	.grid-img{
-		height:400px;
-		width:800px;
-		margin-left:75px;
-	}
-	.image{
-		width:100%;
-		height:100%;
-		object-fit:cover;
-	}
-	#thoughts{
-		margin-left:10px;
-		margin-right:10px;
-	}
-	#description{
-		margin-right:10px;
-		margin-left:10px;
-	}
-}
-@media only screen and (max-width: 667px) {
-	.navbar{
-		justify-content:space-between;
-		flex-flow:column;
-	}
-	.links-div{
-		flex-flow:column;
-	}
-	#links{
-		display:none;
-	}
-	.bars-div{
-		display:block;
-	}
-	.nav-left{
-		display:flex;
-		justify-content:space-around;
-		flex-direction:row;
-	}
-	.navbar .nav-right .links-div a:hover{
-		border-bottom:0px;
-	}
-	.navbar .nav-right .links-div a,.navbar .nav-right .links-div .dropdown{
-		margin-left:20px;
-	}
-	.grid-col-2{
-		grid-template-columns:1fr;
-	}
-	.grid-img{
-		height:400px;
-		width:420px;
-		margin-left:30px;
-	}
-	.image{
-		width:100%;
-		height:100%;
-		object-fit:cover;
-	}
-	.slider img{
-	width:100%;
-	height:75%;
-	}
-	#thoughts{
-		margin-left:10px;
-		margin-right:10px;
-	}
-	#description{
-		margin-right:10px;
-		margin-left:10px;
-	}
-}
-*/
+
 
 #slide-img {
     width: 100%;
