@@ -10,7 +10,7 @@ images[3] = "lab.jpg";
 
 // Change Image
 function changeImg(){
-	document.slide.src = images[i];
+	document.getElementById('slide-img').src = images[i];
 
 	// Check If Index Is Under Max
 	if(i < images.length - 1){
