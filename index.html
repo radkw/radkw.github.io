@@ -6,6 +6,32 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body id="body">
+    <nav class="navbar">
+        <div class="nav-left">
+          <div class="logo-div">
+            <h3>Glenroy-Terence</h3>
+          </div>
+          <div class="bars-div">
+            <i class="fa fa-bars fa-2x" aria-hidden="true" onclick="displayNav(this)" id="on"></i>
+          </div>
+        </div>
+        <div class="nav-right" id="links">
+          <div class="links-div">
+            <a href="">HOME</a>
+            <a href="#description">DESCRIPTION</a>
+            <a href="#about">ABOUT</a>
+            <a href="#thoughts">THOUGHTS</a>
+            <a href="#contactMe">CONTACT</a>
+            <div class="dropdown">
+              <span>THEME</span>
+              <div class="dropdown-content">
+                <p onclick="blackTheme()">Black</p>
+                <p onclick="whiteTheme()">White</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
         <p>Hi I'm Radek. My name is a shorthand for Radoslaw, the Polish version of the name with 'w' instead of 'v' at the end (unlike in Bulgaria or Croatia, where there is Radoslav). 
         Its root words are 'joy' and 'fame' in Polish, but to be fair, the second part comes obviously from 'Slav', like in Slavic people, not from 'fame'.
         Right, enough about naming conventions, unless they are for JavaScript functions. Welcome to my Founders & Coders Application site!
