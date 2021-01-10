@@ -27,3 +27,15 @@ function changeImg(){
 
 // Run function when page loads
 window.onload=changeImg;
+
+
+function displayNav(obj){
+	var id= obj.id;
+	if(id=='on'){
+	document.getElementById('links').style.display = 'block';
+	obj.id = 'off'
+	}else{
+		document.getElementById('links').style.display = 'none';
+		obj.id = 'on'
+	}
+}
