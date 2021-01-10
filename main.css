@@ -284,3 +284,10 @@ footer{
 		margin-left:10px;
 	}
 }
+
+
+img#slide-img {
+    width: 100%;
+    object-fit: cover;
+    height: 50vh;
+}
